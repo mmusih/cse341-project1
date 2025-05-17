@@ -1,0 +1,4 @@
+
+# Get all contacts
+GET https://cse341-project1-xkim.onrender.com/users/
+

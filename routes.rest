@@ -1,3 +1,37 @@
 
 # Get all contacts
-GET https://cse341-project1-xkim.onrender.com/users/
+GET https://cse341-project1-xkim.onrender.com/contacts/
+
+
+### Get all contacts
+GET http://localhost:8080/contacts
+
+### Get contact by ID
+GET http://localhost:8080/contacts/682af54668a098ebdac16e83
+
+### Create contact
+POST  http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName":"Mmusi22",
+  "lastName":"Hubona",
+  "email":"mmusi22@gmail.com",
+  "favoriteColor":"blue",
+  "birthday":"1981-12-26"
+}
+
+### Update contact
+PUT http://localhost:8080/contacts/682af54668a098ebdac16e83
+Content-Type: application/json
+
+{
+  "firstName": "Earl2",
+  "lastName": "Hubona",
+  "email": "rongo4@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "2020-06-18"
+}
+
+### Delete contact
+DELETE  http://localhost:8080/contacts/682b185246b27154468c6006
